@@ -1,0 +1,158 @@
+
+div{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header, nav, main, section, aside, footer{
+	background-color: black;
+	margin: 10px;
+	border-radius: 7px;
+	padding: 5px;
+	font-family: Arial, sans-serif;
+	color: white;
+}
+
+header{
+	background-color: rgba(0,0,0,0.25);
+	height: 200px;
+	flex: 0 1 100%;
+}
+/*
+ *En esta sección se esta trabajando con la barra navegadora.
+ */
+nav{
+	color: white;
+	flex: 0 1 100%;
+	
+}
+
+	#nav{
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #000;
+	  text-decoration: none;
+	  
+	}
+	/*Lista de navegador*/
+	  #nav1{
+		float: left;
+		display: inline;
+		border-right: 1px solid #bbb;
+	  }
+	  
+	  li: last-child{
+		border-right: none;
+	  }
+	  
+	  li a{
+		color: white;
+		text-align: center;
+		padding: 10px 15px;
+		text-decoration: none;
+		display: block;
+	  }
+	  
+	  li a:hover:not(.active){
+		background-color: white;
+		color: black;
+	  }
+	  
+	  .active{
+		background-color: rgb(0,136,255);
+	  }
+	  /*Lo que contenga la lista  (ul dentro de li) */
+	  
+	  nav > li {
+		float: left;
+	  }
+	  
+	  li ul{
+		display: none;
+		position: absolute;
+		min-width: 160px;
+		}
+		
+	  li:hover > ul{
+		display:block;
+		text-decoration: none;
+		position: absolute;
+		}
+		
+/*
+ *Barra navegadora finalizada.
+ */	
+main{
+	background-color: rgba(0, 0, 255,0.25);
+	flex: 1 1;
+}
+
+section{
+	flex: 1 1;
+}
+.title{
+	font-family: Vladimir Script;
+	font-size: 280%;
+	color: #C50606;
+	text-align: center;
+}
+#frase{
+	font-family: Perpetua;
+	font-size: 150%;
+	color: #81F5FD;
+	overflow: auto;
+}
+.contenido{
+	font-family: Perpetua;
+	font-size: 150%;
+	color: #81F5FD;
+	overflow: auto;
+}
+
+table, td, th{
+	border: 1px solid white;
+}
+
+.Lyrics{
+	border: 3px solid rgba(0, 200, 250, .3);
+	background-color: black;
+	height: 80px;
+	width: 800px;
+	position: relative;
+	overflow: auto;
+	text-align: center;
+}
+
+aside{
+	font: small-caption;
+	background-color: rgba(16,35,114,0.5);
+	flex: 0 1 auto;;
+	color: #EE2121;
+	flex-flow: column wrap;
+}
+	#menu{
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+		display: block;
+	}
+
+.link{
+	font: smal-caption;
+	color: yellow;
+	text-decoration: none;
+	flex: 1 1 auto;
+}
+
+canvas{
+	border: 2px solid yellow;
+}
+
+footer{
+	text-align: center;
+	background-color: rgba(16,35,114,0.75);
+	height: 20%;
+	flex: 0 1 100%;
+}
